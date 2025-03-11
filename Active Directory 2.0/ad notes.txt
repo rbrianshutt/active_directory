@@ -1,0 +1,9 @@
+DC-1 vm
+labuser
+ActivePassword1*
+
+jane_admin
+ActivePassword1*
+
+mob.hula
+Password1	
