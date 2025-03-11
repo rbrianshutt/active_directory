@@ -156,8 +156,8 @@ User jane_admin as your admin account from now on <br/>
 <h2>Join CLIENT-1 to your domain (mydomain.com)</h2>
 
 Login to CLIENT-1 as the original local admin (labuser) <br/>
-We need to go to Settings to add the domain to CLIENT-1
-Click on System
+We need to go to Settings to add the domain to CLIENT-1 <br/>
+Click on System <br/>
 
 ![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/9.1%20client%201%20settings%20system.PNG)
 <br />
@@ -178,8 +178,8 @@ Click Change  <br/>
 <br />
 <br />
 Ensure Domain is selected Member of  <br/>
-Enter "mydomain.com"
-Click OK
+Enter "mydomain.com" <br/>
+Click OK <br/>
 
 ![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/9.5%20mydomain.PNG)
 <br />
@@ -202,7 +202,7 @@ CLIENT-1 computer will restart  <br/>
 <br />
 
 When CLIENT-1 restarts, go into Active Directory Users and Computers (ADUC) <br/>
-Open Computers folder and notice CLIENT-1 shows up in ADUC
+Open Computers folder and notice CLIENT-1 shows up in ADUC <br/>
 
 ![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/10.1%20client%201%20is%20in%20aduc.PNG)
 <br />
@@ -246,44 +246,53 @@ Click Add <br/>
 <br />
 <br />
 Enter "Domain Users" in object names <br/>
-Click OK
+Click OK<br/>
 
 ![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/12.5%20domain%20users.PNG)
 <br />
 <br />
 Notice Domain Users now have remote access  <br/>
+You can now log into CLIENT-1 as a normal, non-administrative user now<br/>
+
 
 ![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/12.6%20domain%20users%20allowed%20to%20use%20remote%20desktop.PNG)
 <br />
-<br />
-Lorem ipsum  <br/>
 
-![]()
-<br />
-<br />
-Lorem ipsum  <br/>
+<h2>Create a bunch of additional users and attempt to log into CLIENT-1 with one of the users</h2>
 
-![]()
-<br />
-<br />
-Lorem ipsum  <br/>
+Login to DC-1 as jane_admin <br/>
+Open PowerShell_ise as an administrator  <br/>
 
-![]()
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/13.1%20open%20powershell%20ise%20as%20admin.PNG)
 <br />
 <br />
-Lorem ipsum  <br/>
+Paste the Powershell script (created by Josh Madakor) into the file <br/>
+- [Powershell script that creates users](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)  
 
-![]()
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/13.2%20paste%20script.PNG)
 <br />
 <br />
-Lorem ipsum  <br/>
+Press the play icon  <br/>
+The script will generate 100 users <br/>
 
-![]()
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/13.3%20generate%20users.PNG)
 <br />
 <br />
-Lorem ipsum  <br/>
+Open Active Directory Users and Computers (ADUC) <br/>
+Select a random user under _EMPLOYEES <br/>
 
-![]()
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/13.4%20pick%20random%20user.PNG)
+<br />
+<br />
+Log in to CLIENT-1 via remote connection as the random user<br/>
+
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/13.5%20log%20in%20to%20client1%20as%20cikoredo.PNG)
+<br />
+<br />
+Run whoami command in the command line <br/>
+Notice that Users can now log in to the domain <br/>
+
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/13.6%20command%20line%20whoami.PNG)
 <br />
 <br />
 Lorem ipsum  <br/>
