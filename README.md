@@ -15,120 +15,137 @@ Lorem ipsum
 
 <h2>Program walk-through:</h2>
 
-<h1>Preparing Active Directory Infrastructure in Azure</h1>
+<h1> Deploying Active Directory</h1>
 
-<h2>Setup Domain Controller in Azure</h2>
+<h2>Install Active Directory</h2>
 
-Create a Resource Group  <br/>
+Login to DC-1 <br/>
+Click Add Roles and Features <br/>
 
-![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/1.1%20create%20resource%20group.PNG)
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/3.1%20add%20roles%20and%20features.PNG)
 <br />
 <br />
-Create a Virtual Network and Subnet <br/>
+Select Server from server pool  <br/>
 
-![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/1.2%20create%20virtual%20network.PNG)
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/3.2%20server%20selection.PNG)
 <br />
 <br />
-Create the Domain Controller VM (Windows Server 2022) named “DC-1”  <br/>
+In Select Server Roles, click Active Directory Domain Services <br/>
 
-![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/1.3%20create%20vm%20dc-1.PNG)
-![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/1.3a%20create%20vm%20dc-1.PNG)
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/3.3%20active%20directory%20domain%20services.PNG)
 <br />
 <br />
-Go to DC-1 VM <br/>
-Go to Networking -> Network Settings -> Network interface/IP configuration <br/>
+Add Features  <br/>
 
-![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/1.4%20set%20private%20ip%20nic%20to%20static.PNG)
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/3.4%20add%20features.PNG)
 <br />
 <br />
-After VM is created, set Domain Controller’s NIC Private IP address to be static <br/>
-Go to settings -> IP Configurations <br/>
+Notice Acitve Directory Domain Services is checked <br/>
 
-- <b>Click on ipconfig1</b> 
-- <b>Set allocation to Static and Private IP address to 10.0.0.4</b>
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/3.5%20ad%20domain%20services%20checked.PNG)
+<br />
+<br />
+Check Restart the destination server automatically if required. Click Yes for warning.  <br/>
+Click Install <br/>
 
-![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/1.4a%20set%20private%20ip%20nic%20to%20static.PNG)
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/3.6%20restart%20destination%20server%20if%20required.PNG)
 <br />
 <br />
-Connect to DC-1 via remote connection <br/>
-Log in using credentials <br/>
+Installing...  <br/>
 
-![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/1.5%20rdp%20into%20dc-1.PNG)
-![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/1.5a%20rdp%20into%20dc-1.PNG)
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/3.7%20installation%20progress.PNG)
 <br />
 <br />
-Go to Window Defender Firewall  <br/>
-Click on Windows Defender Firewall Properties <br/>
+Click on yellow warning triagle <br/>
+Click Promote this server to a domain controller<br/>
 
-![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/1.5b%20disable%20firewall.PNG)
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/4.1%20promote%20server%20to%20a%20dm.PNG)
 <br />
 <br />
-Turn Firewall State OFF for the following: <br/>
+Deployment Configuration<br/>
+Select Add a new forest for deployment operation<br/>
+For root domain name, type "mydomain.com"<br/>
 
-- <b>Domain Profile</b> 
-- <b>Private Profle</b>
-- <b>Public Profile</b>
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/4.2%20add%20new%20forest.PNG)
+<br />
+<br />
+Ensure DNS server is checked <br/>
+Create password  <br/>
 
-![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/1.5c%20disable%20firewall.PNG)
-![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/1.5d%20disable%20firewall.PNG)
-![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/1.5e%20disable%20firewall.PNG)
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/4.3%20dc%20options.PNG)
 <br />
+<br />
+DNS Options  <br/>
+
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/4.4%20dns%20options.PNG)
+<br />
+<br />
+Click Install  <br/>
+
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/4.5%20install.PNG)
+<br />
+<br />
+The DC-1 VM is starting<br/>
+
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/5.1%20restarting.PNG)
+<br />
+<br />
+Connect to DC-1 via remote connection as user: mydomain.com\labuser <br/>
+
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/5.2%20rdp%20into%20dc.PNG)
 <br />
 
-<h2>Setup CLIENT-1 in Azure</h2>
+<h2>Create a Domain Admin user within the domain</h2>
 
-Create the Client VM (Windows 10) named “ClIENT-1” <br/>
+Go to Active Directory Users and Computers (ADUC)  <br/>
+Right click "mydomain.com" -> New -> Organizational Unit <br/>
 
-![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/2.1%20create%20client%20vm.PNG)
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/6.1%20aduc%20create%20ou.png)
 <br />
 <br />
-<h3>After VM is created, set Client-1’s DNS settings to DC-1’s Private IP address</h3>
+Create an Organizational Unit named _EMPLOYEES <br/>
+Create an Organization Unit named _ADMINS  <br/>
 
-Take note of DC-1 private IP address <br/>
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/6.2%20ou%20employees.PNG)
+<br />
+<br />
+<h3>Create a New User</h3>
 
-![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/2.2%20set%20Client-1%E2%80%99s%20DNS%20settings%20to%20DC-1%E2%80%99s%20Private%20IP%20address.PNG)
-<br />
-<br />
-Click on CLIENT-1 VM <br/>
-Go to Networking -> Network Settings -> Network Interface/IP Configuration <br/> 
+Right click our new _ADMINS folder -> New -> User<br/>
 
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/6.4%20new%20user%20janeadmin.png)
+<br />
+<br />
+Create a new employee named “Jane Doe” (same password) with the username of “jane_admin”   <br/>
 
-![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/2.2a%20set%20Client-1%E2%80%99s%20DNS%20settings%20to%20DC-1%E2%80%99s%20Private%20IP%20address.PNG)
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/6.5%20janeadmin.PNG)
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/6.6%20create%20password.PNG)
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/6.7%20finish.PNG)
 <br />
 <br />
-Go to Settings -> DNS Servers <br/>
+<h3>Add jane_admin to the “Domain Admins” Security Group</h3>
 
-- <b>Set DNS Servers to Custom</b> 
-- <b>Set DNS Server to 10.0.0.4 (DC-1 private IP address)</b>
-- <b>Save</b>
+Notice Jane Doe as a user in the _ADMINS folder  <br/>
+Right click on Jane Doe -> Properties <br/>
 
-![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/2.2b%20set%20Client-1%E2%80%99s%20DNS%20settings%20to%20DC-1%E2%80%99s%20Private%20IP%20address.PNG)
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/7.1%20add%20jane%20to%20jane%20admins%20security%20group.PNG)
 <br />
 <br />
-Go to virtual machines, select CLIENT-1 <br/>
-Restart<br/>
+Go to Member of tab, see she is a member of Domain Users <br/>
+Click Add  <br/>
 
-![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/2.3%20restart%20client%20vm.PNG)
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/7.2%20member%20of%20add.PNG)
 <br />
 <br />
-Connect to CLIENT-1 via remote connection  <br/>
+Type Domain Admins in the object names <br/>
+Click OK <br/>
 
-![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/2.4%20rdp%20into%20client%201%20vm.PNG)
-![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/2.4a%20rdp%20into%20client%201%20vm.PNG)
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/7.3%20add%20domain%20admins.PNG)
 <br />
 <br />
-Ping the DC-1 private ip address 10.0.0.4 <br/>
-Make sure the ping succeeded <br/>
+See that Jane Doe is a member of Domain Admins and Domain Users <br/>
 
-![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/2.5.1%20ping%20dc%20vm.PNG)
-<br />
-<br />
-Run ipconfig /all <br/>
-The output for the DNS settings should show DC-1’s private IP Address 10.0.0.4<br/>
-
-![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/2.5.2%20ipconfig%20all.PNG)
-![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/2.6%20hostname.PNG)
-
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/7.4%20apply%20ok.PNG)
 <br />
 <br />
 Lorem ipsum  <br/>
@@ -201,3 +218,4 @@ Lorem ipsum  <br/>
 ![]()
 <br />
 <br />
+
