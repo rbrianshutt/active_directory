@@ -35,9 +35,18 @@ Create the Domain Controller VM (Windows Server 2022) named “DC-1”  <br/>
 ![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/1.3a%20create%20vm%20dc-1.PNG)
 <br />
 <br />
-After VM is created, set Domain Controller’s NIC Private IP address to be static <br/>
+Go to DC-1 VM <br/>
+Go to Networking -> Network Settings -> Network interface/IP configuration <br/>
 
 ![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/1.4%20set%20private%20ip%20nic%20to%20static.PNG)
+<br />
+<br />
+After VM is created, set Domain Controller’s NIC Private IP address to be static <br/>
+Go to settings -> IP Configurations <br/>
+
+- <b>Click on ipconfig1</b> 
+- <b>Set allocation to Static and Private IP address to 10.0.0.4</b>
+
 ![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/1.4a%20set%20private%20ip%20nic%20to%20static.PNG)
 <br />
 <br />
