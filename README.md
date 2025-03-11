@@ -207,14 +207,55 @@ Open Computers folder and notice CLIENT-1 shows up in ADUC
 ![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/10.1%20client%201%20is%20in%20aduc.PNG)
 <br />
 <br />
-Create a new OU named “_CLIENTS” and drag Client-1 into there  <br/>
+Create a new OU named “_CLIENTS” and drag CLIENT-1 into there  <br/>
 
 ![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/11.1%20create%20ou%20clients.png)
 ![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/11.2%20create%20client%20ou.PNG)
 <br />
+<br />
+Now CLIENT-1 is in _CLIENTS <br/>
 
-<h2>Setup Remote Desktop for non-administrative users on Client-1</h2>
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/11.3%20move%20client%201%20to%20clients%20ou.PNG)
+<br />
+<br />
+jane_admins in _ADMINS  <br/>
 
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/11.4%20janeadmins%20in%20admins.PNG)
+<br />
+<h2>Setup Remote Desktop for non-administrative users on CLIENT-1</h2>
+
+Log into Client-1 as mydomain.com\jane_admin  <br/>
+
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/12.1%20log%20in%20to%20client1%20as%20janeadmin.PNG)
+<br />
+<br />
+Open system properties <br/>
+Click Remote Desktop <br/>
+
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/12.2%20settings%20system%20remote%20desktop.PNG)
+<br />
+<br />
+Click Users that can remotely access this PC under Users Accounts <br/>
+
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/12.3%20user%20accounts%20select%20users.PNG)
+<br />
+<br />
+Click Add <br/>
+
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/12.4%20add.PNG)
+<br />
+<br />
+Enter "Domain Users" in object names <br/>
+Click OK
+
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/12.5%20domain%20users.PNG)
+<br />
+<br />
+Notice Domain Users now have remote access  <br/>
+
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/12.6%20domain%20users%20allowed%20to%20use%20remote%20desktop.PNG)
+<br />
+<br />
 Lorem ipsum  <br/>
 
 ![]()
@@ -230,4 +271,60 @@ Lorem ipsum  <br/>
 ![]()
 <br />
 <br />
+Lorem ipsum  <br/>
+
+![]()
+<br />
+<br />
+Lorem ipsum  <br/>
+
+![]()
+<br />
+<br />
+Lorem ipsum  <br/>
+
+![]()
+<br />
+<br />
+Lorem ipsum  <br/>
+
+![]()
+<br />
+<br />
+Lorem ipsum  <br/>
+
+![]()
+<br />
+<br />
+Lorem ipsum  <br/>
+
+![]()
+<br />
+<br />
+Lorem ipsum  <br/>
+
+![]()
+<br />
+<br />
+Lorem ipsum  <br/>
+
+![]()
+<br />
+<br />
+Lorem ipsum  <br/>
+
+![]()
+<br />
+<br />
+Lorem ipsum  <br/>
+
+![]()
+<br />
+<br />
+Lorem ipsum  <br/>
+
+![]()
+<br />
+<br />
+
 
