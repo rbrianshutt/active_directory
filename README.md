@@ -109,8 +109,6 @@ Create an Organization Unit named _ADMINS  <br/>
 ![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/6.2%20ou%20employees.PNG)
 <br />
 <br />
-<h3>Create a New User</h3>
-
 Right click our new _ADMINS folder -> New -> User<br/>
 
 ![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/6.4%20new%20user%20janeadmin.png)
@@ -148,61 +146,75 @@ See that Jane Doe is a member of Domain Admins and Domain Users <br/>
 ![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/7.4%20apply%20ok.PNG)
 <br />
 <br />
-Lorem ipsum  <br/>
+Log out of remote connection to DC-1  <br/>
+Log back in as “mydomain.com\jane_admin” <br/>
+User jane_admin as your admin account from now on <br/>
 
-![]()
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/8.1%20log%20in%20as%20janeadmin.PNG)
 <br />
-<br />
-Lorem ipsum  <br/>
 
-![]()
-<br />
-<br />
-Lorem ipsum  <br/>
+<h2>Join CLIENT-1 to your domain (mydomain.com)</h2>
 
-![]()
-<br />
-<br />
-Lorem ipsum  <br/>
+Login to CLIENT-1 as the original local admin (labuser) <br/>
+We need to go to Settings to add the domain to CLIENT-1
+Click on System
 
-![]()
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/9.1%20client%201%20settings%20system.PNG)
 <br />
 <br />
-Lorem ipsum  <br/>
+Click About  <br/>
 
-![]()
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/9.2%20about.png)
 <br />
 <br />
-Lorem ipsum  <br/>
+Click Rename this PC (advanced) <br/>
 
-![]()
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/9.3%20rename%20this%20pc.PNG)
 <br />
 <br />
-Lorem ipsum  <br/>
+Click Change  <br/>
 
-![]()
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/9.4%20computer%20name%20change.PNG)
 <br />
 <br />
-Lorem ipsum  <br/>
+Ensure Domain is selected Member of  <br/>
+Enter "mydomain.com"
+Click OK
 
-![]()
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/9.5%20mydomain.PNG)
 <br />
 <br />
-Lorem ipsum  <br/>
+Enter admin credentials for mydomain.com  <br/>
 
-![]()
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/9.6%20admin%20credentials.PNG)
 <br />
 <br />
-Lorem ipsum  <br/>
+Success  <br/>
 
-![]()
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/9.7%20welcome%20to%20domain.PNG)
 <br />
 <br />
-Lorem ipsum  <br/>
+CLIENT-1 computer will restart  <br/>
 
-![]()
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/9.8%20restart.PNG)
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/9.9%20restart%20now.PNG)
 <br />
 <br />
+
+When CLIENT-1 restarts, go into Active Directory Users and Computers (ADUC) <br/>
+Open Computers folder and notice CLIENT-1 shows up in ADUC
+
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/10.1%20client%201%20is%20in%20aduc.PNG)
+<br />
+<br />
+Create a new OU named “_CLIENTS” and drag Client-1 into there  <br/>
+
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/11.1%20create%20ou%20clients.png)
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/11.2%20create%20client%20ou.PNG)
+<br />
+
+<h2>Setup Remote Desktop for non-administrative users on Client-1</h2>
+
 Lorem ipsum  <br/>
 
 ![]()
