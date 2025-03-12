@@ -19,6 +19,15 @@ This repository contains a step-by-step guide for setting up a Domain Controller
 - <b>Windows 10</b>
 - <b>Windows Server 2022</b>
 
+<h2>Overview:</h2>
+
+- <b>Set up a Domain Controller (Windows Server 2022) and Client VM (Windows 10) in Azure</b> 
+- <b>Install and configure Active Directory Domain Services</b>
+- <b>Create and manage user accounts and organizational units (OUs)</b>
+- <b>Join a client machine to the domain</b>
+- <b>Configure Remote Desktop access for domain users</b>
+- <b>Implement account lockout policies and security settings</b>
+
 <h2>Program Walk-Through:</h2>
 
 - [Setting Up the Environment](https://github.com/rbrianshutt/active_directory_infrastructure)
