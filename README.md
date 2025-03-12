@@ -17,6 +17,7 @@ Lorem ipsum
 <h2>Operating Systems</h2>
 
 - <b>Windows 10</b>
+- <b>Windows Server 2022</b>
 
 <h2>Program Walk-Through:</h2>
 
