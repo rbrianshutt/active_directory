@@ -1,6 +1,6 @@
 <h1>Active Directory</h1>
 
-![]()
+![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/active-directory-logo.png)
 
 
 <h2>Description</h2>
