@@ -22,5 +22,5 @@ Lorem ipsum
 
 - [Preparing Active Directory Infrastructure in Azure](https://github.com/rbrianshutt/active_directory_infrastructure)
 - [Deploying Active Directory](https://github.com/rbrianshutt/deploying_active_directory)
-- [Managing Accounts](https://github.com/rbrianshutt/active_directory_accounts) 
+- [Group Policy and Managing Accounts](https://github.com/rbrianshutt/active_directory_accounts) 
 
