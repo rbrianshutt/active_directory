@@ -6,6 +6,7 @@ On DC-1, open Group Policy Management <br/>
 
 ![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/14.1%20group%20policy%20management.PNG)
 <br />
+
 Under mydomain.com, right click the Default Domain Policy -> Edit <br/>
 
 ![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/14.2%20edit%20default%20domain%20policy.png)
@@ -24,7 +25,7 @@ Click Apply, then OK  <br/>
 
 ![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/14.4%20account%20lockout%20duration.PNG)
 <br />
-<br />
+
 Some suggested values are generated  <br/>
 Click OK  <br/>
 
