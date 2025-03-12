@@ -37,7 +37,7 @@ View our current settings now in place  <br/>
 ![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/14.6%20policy%20settings.PNG)
 <br />
 <br />
-Log in the CLIENT-1 as jane_admin update policy for users br/>
+Log in the CLIENT-1 as jane_admin update policy for users <br/>
 
 ![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/14.7%20login%20client1%20as%20janeadmin.PNG)
 <br />
@@ -63,8 +63,8 @@ On DC-1, right click on our locked out user -> Properties  <br/>
 ![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/13.4%20pick%20random%20user.PNG)
 <br />
 <br />
-Check Unlock Account<br/>
-Click Apply and Enter<br/>
+Check Unlock Account <br/>
+Click Apply and Enter <br/>
 
 ![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/14.9%20unlock%20account.PNG)
 <br />
@@ -111,9 +111,9 @@ The account is currently disabled <br/
 
 <h2>Observe logs in Event Viewer</h2>
 
-Open Event Viewer<br/>
+Open Event Viewer <br/>
 We can see the failed attempts as Audit Failure and Event ID 4625  <br/>
-We can also see the succesful login as Audit Success and Event ID 4624<br/>
+We can also see the succesful login as Audit Success and Event ID 4624 <br/>
 
 ![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/16.1%20event%20viewer%204625%20audit%20failure%20audit%20sucess.PNG)
 <br />
