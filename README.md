@@ -105,7 +105,8 @@ Account has been disabled <br/>
 <br />
 <br />
 Attempt to login on CLIENT-1 <br/>
-The account is currently disabled <br/
+The account is currently disabled <br/>
+
 ![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/15.3%20attempted%20login%20account%20disabled.PNG)
 <br />
 
