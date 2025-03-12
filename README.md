@@ -1,3 +1,18 @@
+<h1>Active Directory</h1>
+
+![]()
+
+
+<h2>Description</h2>
+Lorem ipsum
+<br />
+
+<h2>Techonologies Used</h2>
+
+- <b>Microsoft Azure Virtual Machines</b> 
+- <b>Remote Desktop</b>
+- <b>Active Directory Domain Services</b>
+
 <h1>Unlocking Accounts, Resetting Passwords, Enabling and Disabling Accounts, Observing Logs</h1>
 
 <h2>Configure Group Policy to lockout account</h2>
