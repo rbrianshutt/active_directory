@@ -22,5 +22,5 @@ Lorem ipsum
 
 - [Preparing Active Directory Infrastructure in Azure](https://github.com/rbrianshutt/active_directory_infrastructure)
 - [Deploying Active Directory](https://github.com/rbrianshutt/deploying_active_directory)
-- [Unlocking Accounts, Resetting Passwords, Enabling and Disabling Accounts, Observing Logs](https://github.com/rbrianshutt/active_directory_accounts) 
+- [Managing Accounts](https://github.com/rbrianshutt/active_directory_accounts) 
 
