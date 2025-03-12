@@ -9,9 +9,14 @@ Lorem ipsum
 
 <h2>Techonologies Used</h2>
 
-- <b>Microsoft Azure Virtual Machines</b> 
-- <b>Remote Desktop</b>
+- <b>Microsoft Azure Virtual Machines</b>
 - <b>Active Directory Domain Services</b>
+- <b>Remote Desktop</b>
+- <b>Powershell</b>
+
+<h2>Operating Systems</h2>
+
+- <b>Windows 10</b>
 
 <h2>Program Walk-Through:</h2>
 
