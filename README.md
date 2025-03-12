@@ -21,7 +21,7 @@ This repository contains a step-by-step guide for setting up a Domain Controller
 
 <h2>Program Walk-Through:</h2>
 
-- [Preparing Active Directory Infrastructure in Azure](https://github.com/rbrianshutt/active_directory_infrastructure)
+- [Setting Up the Environment](https://github.com/rbrianshutt/active_directory_infrastructure)
 - [Deploying Active Directory](https://github.com/rbrianshutt/deploying_active_directory)
 - [Group Policy and Managing Accounts](https://github.com/rbrianshutt/active_directory_accounts) 
 
