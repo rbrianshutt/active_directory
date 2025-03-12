@@ -4,7 +4,7 @@
 
 
 <h2>Description</h2>
-Lorem ipsum
+This repository contains a step-by-step guide for setting up a Domain Controller and Client VM in Azure, installing Active Directory, configuring group policies, and managing user accounts.
 <br />
 
 <h2>Techonologies Used</h2>
