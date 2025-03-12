@@ -19,7 +19,7 @@ Click on Account lockout duration to view properties<br/>
 ![](https://github.com/rbrianshutt/active_directory/blob/main/Active%20Directory%202.0/14.3%20expand%20tree.PNG)
 <br />
 <br />
-Make sure Define this policy is checked <br/>
+Make sure Define this policy setting is checked <br/>
 Set account locked out for 30 minutes <br/>
 Click Apply, then OK  <br/>
 
